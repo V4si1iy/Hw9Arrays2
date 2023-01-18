@@ -48,7 +48,7 @@ public class Main {
             spendAverage += i;
         }
         spendAverage /= 30;
-        System.out.printf("Средняя сумма трат за месяц составила %.2f ", spendAverage);
+        System.out.printf("Средняя сумма трат за месяц составила %.2f \n", spendAverage);
     }
 
     public static void task4() {
