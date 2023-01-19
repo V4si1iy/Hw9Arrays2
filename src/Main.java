@@ -31,13 +31,15 @@ public class Main {
         int spendMax = arr[0];
         int spendMin = arr[0];
         for (int i : arr) {
-            if (spendMin > i)
+            if (spendMin > i) {
                 spendMin = i;
-            if (spendMax < i)
+            }
+            if (spendMax < i) {
                 spendMax = i;
+            }
+            System.out.println("Минимальная сумма трат за день составила " + spendMin);
+            System.out.println("Максимальная сумма трат за день составила " + spendMax);
         }
-        System.out.println("Минимальная сумма трат за день составила " + spendMin);
-        System.out.println("Максимальная сумма трат за день составила " + spendMax);
     }
 
     public static void task3() {
@@ -47,7 +49,7 @@ public class Main {
         for (int i : arr) {
             spendAverage += i;
         }
-        spendAverage /= 30;
+        spendAverage /= arr.length;
         System.out.printf("Средняя сумма трат за месяц составила %.2f \n", spendAverage);
     }
 
@@ -61,3 +63,4 @@ public class Main {
     }
 
 }
+
